@@ -26,9 +26,6 @@ class UserResponseDTO(User):
     projects_count: int = 0
     tasks_count: int = 0
 
-    class Config:
-        from_attributes = True
-
 # --------- User классы ---------
 
 
@@ -58,8 +55,6 @@ class TaskResponseDTO(Task):
     assignee_username: Optional[str] = None
     days_until_due: Optional[int] = None
 
-    class Config:
-        from_attributes = True
 
 # --------- Task классы ---------
 
@@ -80,9 +75,6 @@ class ProjectResponseDTO(Project):
     owner_username: Optional[str] = None
     tasks_count: int = 0
     completed_tasks_count: int = 0
-
-    class Config:
-        from_attributes = True
 
 # --------- Project классы ---------
 
